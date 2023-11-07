@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Questionnaire.css">
+</head>
+<body>
+<div class="container">
+  <div class="item">
+  <form>
+    <label>名前</label><br>
+    <input class="name" type="text" placeholder="名前を入力してください"><br><br>
+    <label>年代</label><br>
+    <select class="age">
+      <option id="sentaku">10代</option>
+      <option id="sentaku">20代</option>
+      <option id="sentaku">30代</option>
+      <option id="sentaku">40代</option>
+      <option id="sentaku">50代以上</option>
+    </select><br><br>
+    <label>性別</label><br>
+    <input type="radio" name="gender"><label id="sentaku">男性</label>
+    <input type="radio" name="gender"><label id="sentaku">女性</label>
+    <input type="radio" name="gender"><label id="sentaku">その他</label><br><br>
+    <label>印象的なページはどこでしたか？</label><br>
+    <input type="radio" name="impression"><label id="sentaku">Profile</label> <input type="radio" name="impression"><label id="sentaku">History</label>
+    <input type="radio" name="impression"><label id="sentaku">Contact</label><br><br>
+    <label class="impression">このWebページ全体を通してのご意見、感想</label><br>
+    <textarea placeholder="ご意見、感想をお願いします" rows="10" textarea style="font-family: 'Meiryo', sans-serif" textarea style="font-size: 20px;"></textarea><br><br>
+    <!--テキストエリアのボックスの大きさを変えるときはcolsとrowsで変更する。-->
+    <input type="submit" id="submission" value="送信" style="font-size: 15px;"> <input type="reset" id="submission" value="リセット" style="font-size: 15px;"><br><br>
+    <section class="backtohome">
+      <a href="C:\Users\j_ino\OneDrive\デスクトップ\lesson\Myprofile2/index.html">Homeへ戻る</a><br>
+    </section>
+  </form>
+  </div>
+</div>
+</body>
+</html>
+

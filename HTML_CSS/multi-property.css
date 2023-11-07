@@ -1,0 +1,6 @@
+/*この下に文字色と、文字のサイズと文字の配置を指定する*/
+p {
+  color: red;
+  font-size: 48px;
+  text-align: right;
+}

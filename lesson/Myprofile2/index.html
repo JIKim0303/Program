@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>私のプロフィール</title>
+    <meta name="description" content="これまで習った内容を活かして私のプロフィールを作成しました。">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myprofile.css"> 
+  </head>
+
+  <body>
+      <header>
+        <nav class="header__nav nav" id="js-nav">
+          <ul class="nav__items nav-items">
+            <li><a href="/Myprofile2">Home</a></li>
+            <li><a href="#">History</a></li>　　　　　<!--中身は作らない--!>
+            <li><a href="/Myprofile2/contact.html">Contact</a></li>
+            <li><a href="/Myprofile2/Questionnaire.html">Questionnaire</a></li>
+          </ul>
+       </nav>
+       <button class="header__hamburger hamburger" id="js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+       </button>      
+      </header>
+
+      <main>
+        <article class="profile">
+          <!-- この見出しを中央配置にする -->
+          <h1>My Profile</h1> 
+          <p>名前：井上　純子</p>  <!--このp段落に対して::before改行content: "◆";のスタイルを適用する-->
+          <p>生年月日：1991年3月3日</p>
+          <p>血液型：A型</p>
+          <p>出身地：神奈川県</p>
+          <p>趣味：Netflix鑑賞、ジムで運動、推し活、旅行</p>
+          <p>好きなアーティスト：BTS</p>
+          <p>好きな食べ物：韓国料理（特にビビンバやチヂミ<span>♡</span>）</p>
+          <p>プログラミング学習を始めたきっかけ：コロナをきっかけ、また30代に入ってから、場所にとらわれない、将来もずっと武器できるスキル、<br>
+            市場価値を付けたいと思い、興味を持ちだした。2022年に休職していたときに動物（特に犬）が好きになり、保護犬のことを知った。犬との生活を大事にしながら柔軟な働き方ができるwebエンジニアを目指したいと思うようになった。</p>
+           <p>学習への意気込み：無理はしすぎず、ただ自分の、「なぜ？」と追及できる長所を生かしてプログラミング初心者から経験エンジニアと渡り合える、仕事としていけるように楽しみながら続けていきたい！！</p>
+        </article>
+
+      <article class="SNS">
+       <div class="container">
+        <h1>SNS</h1><br><br>  <!--SNSのリンクをすべて横並びにする。見出しは中央配置にするdisplayプロパティでinline-blockを指定する-->
+        <div class="item">
+          <div class="instagram">
+            <h2 id="heading">Instagram</h2>
+            <a href="https://www.instagram.com/jnk33kim/"><img id="logos" src="/Myprofile2/images/Instagram_Glyph_Gradient.png" width="150px", height="150px"></a>
+          </div>
+
+          <div class="facebook">  <!--背景色を薄い黄色にする-->
+            <h2 id="heading">Facebook</h2>
+            <a href="https://www.facebook.com/junko.inoue.71"><img src="/Myprofile2/images/f_logo_RGB-Blue_100.png" id="logos"></a>
+          </div>
+
+          <div class="youtube">  <!--背景色を薄い青色にする-->
+            <h2 id="heading">Youtube</h2>
+            <p>大学時代ダンス部に所属していてHiphopを習っていました。</p>
+            <a href="https://www.youtube.com/watch?v=lmJao92PBSE&t=2s"><img src="/Myprofile2/images/yt_icon_rgb.png" id="logos"></a>
+          </div>  
+       </div>
+      </div>
+    </article>
+
+    <button id="backBtn">TOPに戻る</button>
+    <script src="#"></script>
+   </main>
+      <footer>
+      </footer>
+
+  </body>
+ </html>

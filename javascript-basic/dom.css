@@ -1,0 +1,10 @@
+.bts {
+  width: 20%;
+  height: 20%;
+}
+
+.bts.clicked {
+  background-color: pink;
+  border-radius: 10%;
+  border: solid 2px black;
+}

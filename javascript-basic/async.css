@@ -1,0 +1,110 @@
+#gnav {
+  background-color: #4682b4;
+  position: fixed;
+  width: 100%;
+}
+
+.inner {
+  display: flex;
+  flex-direction: wrap;
+  justify-content: flex-end;
+  /*ここにwidthを指定すると、ul要素のinnerのボックスが全体的に右側に寄る(innerボックスが全体的に幅を広げたから右に寄ったと考えられる*/
+  width: 100%;  
+}
+@media screen and (max-width: 480px) {
+  .inner {
+  display: inline-block;
+  }  
+}
+
+#gnav li {
+  width: 150px;
+}
+@media screen and (max-width: 480px) {
+  #nav li {
+    width: 50%;
+  }
+}
+
+.pink-screen {
+  background-color: pink;
+  height: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* @media screen and (max-width: 768px) {
+  .pink-screen {
+    background-color: pink;
+    height: cover;
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .pink-screen {
+    background-color: pink;
+    height: cover;
+    width: 30%;
+    margin: 0 auto;
+  }
+} */
+
+.purple-screen {
+  background-color: blueviolet;
+  height: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* @media screen and (max-width: 780px) {
+  .purple-screen {
+  background-color: blueviolet;
+  height: cover;
+  width: 70%;
+  margin: 0 auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .purple-screen {
+    background-color: blueviolet;
+    height: cover;
+    width: 30%;
+    margin: 0 auto;
+  }
+} */
+
+.orange-screen {
+  background-color: #ffd700;
+  height: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* @media screen and (max-width: 780px) {
+  .orange-screen {
+  background-color: #ffd700;
+  height: cover;
+  width: 70%;
+  margin: 0 auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .orange-screen {
+  background-color: #ffd700;
+  height: cover;
+  width: 30%;
+  margin: 0 auto;
+  }
+} */
+
+#backhome {
+  display: none;
+
+  padding: 40px 10px;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 0%;
+  opacity: 0.5;
+/*inlineになったときの位置の設定*/
+  position: fixed;
+  top: 10px;
+  left: 50px;
+}

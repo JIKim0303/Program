@@ -1,0 +1,120 @@
+.html {
+  font-family: "Meiryo", sans-serif;
+}
+
+.container {
+  background-color: pink;
+  height: cover;
+  width: 50%;
+  font-size: 10px;
+}
+@media screen and (min-width: 960px) {
+  .container {
+    background-color: pink;
+    height: cover;
+    width: 100%;
+    font-size: 25px;
+  }
+} 
+
+  .item {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    height: cover;
+    width: 50%;
+  }
+@media screen and (min-width: 960px) {
+  .item {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    height: cover;
+    width: 717px;
+  }
+}
+
+.name {
+  width: 20%;
+  padding: 1em 0.5em;
+  line-height: 1;
+  font-size: 10px;
+}
+@media screen and (min-width: 960px) {
+  .name {
+    width: 50%;
+    padding: 1em 0.5em;
+    line-height: 1;
+    font-size: 20px;
+  }
+}
+
+.email {
+  width: 20%;
+  padding: 1em 0.5em;
+  line-height: 1;
+  font-size: 10px;
+}
+@media screen and (min-width: 960px) {
+  .email {
+    width: 50%;
+    padding: 1em 0.5em;
+    line-height: 1;
+    font-size: 15px;
+  }
+}
+
+.phoneno {
+  width: 20%;
+  padding: 1em 0.5em;
+  line-height: 1;
+  font-size: 10px;
+}
+@media screen and (min-width: 960px) {
+  .phoneno {
+    width: 50%;
+    padding: 1em 0.5em;
+    line-height: 1;
+    font-size: 15px;
+  }
+}
+
+#submission {
+  width: 15%;
+  padding: 1em 0.5em;
+  line-height: 1;
+  text-align: center;
+}
+@media screen and (min-width: 960px) {
+  #submission {
+    width: 25%;
+    padding: 1em 0.5em;
+    line-height: 1;
+    text-align: center;
+  }
+}
+
+
+.backtohome {
+  text-align: left;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.backtohome a:link {
+  color: lightgrey;
+}
+
+.backtohome a:visited {
+  color: lightgray;
+}
+
+.backtohome a:hover {
+  color: #b0c4de;
+}
+
+.backtohome a:active {
+  color: #b0c4de;
+}

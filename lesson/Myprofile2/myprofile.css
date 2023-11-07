@@ -1,0 +1,318 @@
+
+.header__nav {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  transform: translateX(100%);  /*このコードも不明。後で調べる。*/
+  background-color: #fff;
+  transition: ease .4s;  /*これは何のコード？後で調べる*/
+}
+@media screen and (min-width: 960px) {
+  .header__nav {
+    position: static;
+    transform: initial;
+    background-color: inherit;  /*inheritとは親要素のスタイルを継承させるときに指定するもの。継承できるのは文字サイズ、太さ、文字の色*/
+    height: inherit;
+    justify-content: end;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .nav__items {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: initial;
+    justify-content: space-between;
+  }
+}
+
+.nav-items {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+}
+@media screen and (min-width: 960px) {
+  .nav-items {
+    position: inherit;
+    top: o;
+    left: 0;
+    transform: translate(0, 0);
+  }
+}
+
+.nav-items__item a {
+  color: black;
+  width: 100%;
+  display: block;     /*スマホのときは各メニューが縦並びになる*/
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+.nav-items__item:last-child a {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 960px) {
+  .nav-items__item a {
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+}
+
+.nav-items__item a:link {
+  color: white;
+}
+.nav-items__item a:visited {
+  color: white;
+}
+.nav-items__item a:hover {
+  color: pink;
+}
+.nav-items__item a:active {
+  color: pink;
+}
+
+/*ハンバーガーメニューのコード*/
+.header__hamburger {
+  width: 48px;
+  height: 100%;
+}
+/*上記のコードはおそらくハンバーガーメニューの三本線をタップしたときに表示される画面の大きさ。ハンバーガーメニューの三本線のスタイルを指定するときは.hamburgerと、別名を指定しているため*/
+/*私が実装するときも同様にした方がよさそう。*/
+.hamburger {
+  background-color: transparent;
+  border-color: transparent;
+  z-index: 9999;
+}
+@media screen and (min-width: 960px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.hamburger span {
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  position: relative;
+  transition: ease .4s;
+  display: block;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger span:nth-child(2) {
+  margin: 8px 0;
+}
+
+.hamburger span:nth-child(3) {
+  top: 0;
+}
+
+/* ハンバーガーメニュークリック後のスタイル */
+.header__nav.active {
+  transform: translateX(0);
+}
+
+.hamburger.active span:nth-child(1) {
+  top: 5px;
+  transform: rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+
+}
+
+.hamburger.active span:nth-child(3) {
+  top: -13px;
+  transform: rotate(-45deg);
+}
+
+
+
+.profile p::before {
+  content: "◆";
+  color: purple;
+}
+
+.profile span {
+  color: red;
+}
+
+.container {
+  background-color: #fff0f5;
+  height: cover;
+  width: 50%;
+  margin-top: 0;
+  display: inline-block;
+  position: relative;
+}
+@media screen and (min-width: 960px) {
+  .container {
+    background-color: inherit;
+    background-size: cover;
+    height: 2500px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+  .container h1 {
+    font-size: 15px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    text-align: center;
+  }
+@media screen and (min-width:960px) {
+.container h1{
+  font-size: 30px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  text-align: center;
+  }
+}
+
+#heading {
+  text-align: center;    /*SNSの各h2タグにidを付けてまとめて枠の中央配置にした。*/
+  margin-bottom: 0px;
+}
+
+/*add a hover effect*/
+#logos:hover {  /*それぞれのSNSのアイコンに対してopacityを指定する。*/
+  opacity: 0.7;
+}
+
+.instagram {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: none;
+  border: solid 5px red;
+}
+@media screen and (min-width:960px;) {
+  .instagram {
+    position: absolute;
+    top: 50px;
+    left: 50px
+    width: 300px;
+    height: 300px;
+    background-color: none;
+    border: solid 5px red;
+  }
+}
+
+.instagram img {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+}
+@media screen and (min-width: 960px) {
+  .instagram img {
+    display: block;    /*imgタグ（インスタのロゴ）に対してdiplay: blockにして、margin:auto;にしたら赤枠の中心に配置された*/
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.facebook {
+  position: absolute;
+  top: 150px;
+  right: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: none;
+  border: solid 5px yellow;
+}
+@media screen and (min-width: 960px) {
+  .facebook {
+    position: absolute;
+    top: 150px;
+    right: 50px;
+    height: 300px;
+    width: 300px;
+    background-color: none;
+    border: solid 5px yellow;  /*この行の下にdisplay: flex;と記述したことで、h2要素とimg要素が横並びになったようなので削除した。*/
+  }
+}
+
+.facebook img {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+}
+@media screen and (min-width: 960px){
+  .facebook img {
+  display: block;  /*item02で指定したdisplay: block;を削除して、イメージ要素に対してblockをつけた。*/
+  margin: 0 auto
+  width: 200px;
+  height: 200px;
+  }
+}
+
+.youtube {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  height: 100px;
+  width: 100px;
+  background-color: none;
+  border: solid 5px blue;
+}
+@media screen and (min-width: 960px) {
+  .youtube {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    height: 300px;
+    width: 300px;
+    background-color: none;
+    border: solid 5px blue;
+  }
+}
+
+.youtube p {
+  margin-top: 0px;
+}
+
+.youtube img{
+  display: block;
+  margin: 0 auto;
+  height: 80px;
+  width: 60px;
+}
+@media screen and (min-width: 960px) {
+  .youtube img{
+    display: block;
+    margin: 0 auto;
+    height: 150px;
+    width: 170px;
+  }
+}
+
+.youtube p {
+  padding: 0px;
+  margin: 1px;
+}
+
+.backBtn {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  background-color: #000;
+  text-decoration: none;
+  border-radius: 50%;
+}
